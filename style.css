@@ -41,7 +41,7 @@ h1,h2,h3,h4,h5 .h1,.h2,.h3,.h4,.h5{
     color: var(--GrigioScuro);
 }
 
-.txBianco{
+.tx-Bianco{
     color: var(--Bianco);
 }
 
@@ -127,5 +127,44 @@ header{
 .carousel-indicators [data-bs-target]{
     background-color: var(--GrigioScuro);
     background-clip: unset;
+    background: var(--Bianco);
 
+
+}
+
+main{
+    background-color: var(--GrigioScuro);
+}
+
+
+/* css sezione card */
+
+.card-custom{
+    height: 360px;
+    width: 260px;
+    position: relative;
+}
+
+.img-card{
+    height: 360px;
+    width: 260px;
+}
+
+.card-custom::after{
+    content: "";
+    height: 360px;
+    width: 235px;
+    position: absolute;
+    background: linear-gradient(rgba(271,250,0,0.2), rgba(51,51,51,0.5));
+    top: auto;
+    left: 0.33cm;
+    opacity: 0;
+    transition: 1s;
+    
+
+   
+}
+.card-custom:hover::after{
+    opacity: 1;
+    
 }
